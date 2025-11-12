@@ -1,0 +1,2 @@
+# Ignore VS Code Remote Development files
+.vscode-server/
