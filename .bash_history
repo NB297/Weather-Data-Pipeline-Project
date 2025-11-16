@@ -46,3 +46,31 @@ python3 insert_records.py
 clear
 docker-compose up
 mv repos/weather-data-project/api-request/docker-compose.yaml repos/weather-data-project
+cd repos
+cd repos/weather-data-project
+cd weather-data-project
+docker-compose up
+cd repos/weather-data-project
+docker-compose exec db psql -U db_user -d db
+git add .
+git commit -m "Changes in api_request code \"
+Created docker-compose"
+git push
+cd repos/weather-data-project
+docker-compose up
+cd repos/weather-data-project
+docker-compose up
+cd repos/weather-data-project
+docker-compose up
+cd repos/weather-data-project
+docker-compose exec db psql -U db_user -d db
+pip install psycopg2-binary
+cd repos/weather-data-project
+python3 -m venv .venv
+sudo apt install python3.12-venv
+python3 -m venv .venv
+source .venv/bin/activate
+pip install psycopg2-binary
+cd api-request
+python3 insert_records.py
+pip install requests
